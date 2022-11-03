@@ -58,6 +58,23 @@ public class Main {
                 System.out.println("Сегодня " + day+ "-е. Нужен отчёт.");
             }
         }
-
+        System.out.println("Задание 8");
+        int yearCometIsCome = 79;
+        int yearNow = 2022;
+        int yearEarlier = yearNow - 200;
+        int year = 0;
+        while (year < yearNow){
+            year = year+yearCometIsCome;
+            if (year >= yearEarlier && year <= yearNow)
+                System.out.println("Комета появлялась в " + year + " году");
+            else if (year > yearNow) {
+                System.out.println("Комета появится в " + year + " году");
+            }
+        }
+        System.out.println("Задание 9");
+        int term1 = 2;
+        for (int term2 = 1; term2 <=10; term2++){
+            System.out.println(term1 + "*" + term2 + "=" + term1*term2);
+        }
     }
 }
